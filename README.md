@@ -18,15 +18,32 @@ Set environment
 
 ```
 export ORGANIZATION_NAME={your organization name}
-export QIITA_ACCESS_TOKEN={your qiita access token}
 ```
 
 How to get this
 
 - organization neme -> your organization's URL
   - ex) `https://foobar.qiita.com/` <- `foobar` is organization name.
-- qiita access token -> see: https://qiita.com/api/v2/docs#認証認可
 
+### Remember your Qiita access token
+
+`test_bot /remember my qiita token (?<token>.+)\z/)/`
+
+For example
+
+```
+@foobar remember my qiita token <token>
+```
+
+Remember your Qiita access token.
+
+The `<token>` get from https://qiita.com/settings/tokens/new.
+
+Require `read_qiita_team` and `write_qiita_team` scope.
+
+![image](https://gyazo.com/f8e329c1d7ba60df8d95dca8be96d91b.png)
+
+See here for details: https://qiita.com/api/v2/docs#%E8%AA%8D%E8%A8%BC%E8%AA%8D%E5%8F%AF
 
 ### Create article
 
