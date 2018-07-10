@@ -1,3 +1,4 @@
+require "ruboty"
 require "ruboty/handlers/qiitateam_template"
 require "ruboty/qiitateam_template/actions/base"
 require "ruboty/qiitateam_template/actions/create"
